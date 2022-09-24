@@ -2,17 +2,16 @@
 <html>
 
 <head>
-    <title>Light Control Example</title>
-    <script type="text/javascript">
-        function allOn() {
-            var myWindow = window.open('http://www.yahoo.com', '1366002941508', 'width=600,height=400,left=5,top=3')
-            setTimeout(function () { myWindow.close(); }, 2000);
-        }
-    </script>
+    <title>Auto Close Page</title>
+
 </head>
 
 <body>
     <h1>Auto Close Page</h1>
+
+    <script>
+        setTimeout("window.close()", 2000) 
+    </script>
 </body>
 
 </html>
