@@ -1,18 +1,23 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-    <head>
-        <!-- head definitions go here -->
-    </head>
-<body onload="waitFiveSec()"> <!--it will wait to load-->
 
-<!-- your html... -->
-<script>
-  function waitFiveSec(){
-    setTimeout(function, milliseconds) /*(here you need to implement delay code)*/
-    window.close();
-  }
-</script>
+<head>
+    <title>Light Control Example</title>
+    <script type="text/javascript">
+        function allOn() {
+            var myWindow = window.open('http://www.yahoo.com', '1366002941508', 'width=600,height=400,left=5,top=3')
+            setTimeout(function () { myWindow.close(); }, 3000);
+        }
+    </script>
+</head>
 
+<body>
+    <h1>Lights Example</h1>
+
+    <input type=submit value="ALL ON" onclick="allOn();" />
+    <script>
+        setTimeout("window.close()", 3000) 
+    </script>
 </body>
 
 </html>
