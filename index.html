@@ -3,16 +3,16 @@
     <head>
         <!-- head definitions go here -->
     </head>
-    <body>
-      "Hello" 
-  <!-- the content goes here -->
+<body onload="waitFiveSec()"> <!--it will wait to load-->
+
+<!-- your html... -->
 <script>
-  setTimeout(function() {
-      window.close()
-  }, 1000);
+  function waitFiveSec(){
+    setTimeout(function, milliseconds) /*(here you need to implement delay code)*/
+    window.close();
+  }
 </script>
 
-
-    </body>
+</body>
 
 </html>
